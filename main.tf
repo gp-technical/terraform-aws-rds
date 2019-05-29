@@ -65,6 +65,8 @@ module "db_instance" {
   kms_key_id        = "${var.kms_key_id}"
   license_model     = "${var.license_model}"
 
+  performance_insights_enabled = "${var.performance_insights_enabled}"
+
   name                                = "${var.name}"
   username                            = "${var.username}"
   password                            = "${var.password}"

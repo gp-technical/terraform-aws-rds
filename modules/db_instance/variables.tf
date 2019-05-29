@@ -135,6 +135,11 @@ variable "create_monitoring_role" {
   default     = false
 }
 
+variable "performance_insights_enabled" {
+  description = "Enable performance insights reports for this instance."
+  default     = false
+}
+
 variable "allow_major_version_upgrade" {
   description = "Indicates that major version upgrades are allowed. Changing this parameter does not result in an outage and the change is asynchronously applied as soon as possible"
   default     = false
